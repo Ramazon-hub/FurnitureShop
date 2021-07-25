@@ -1,0 +1,23 @@
+//   abstracts
+@import './abstracts/fonts';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/utils';
+@import './abstracts/visually-hidden';
+
+//   base
+@import './base/base';
+@import './base/normalize';
+@import './base/typography';
+
+
+//  companents
+
+//  layout
+@import './layout/headr';
+@import './layout/nav';
+@import './layout/footer';
+@import './layout/forms';
+
+
+//  page
