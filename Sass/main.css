@@ -59,7 +59,10 @@ img {
   align-items: center;
 }
 
-.logo {
+
+
+.site-headr .logo {
+
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
@@ -309,6 +312,7 @@ img {
 }
 .form__input::placeholder {
   font-size: 14px;
+
 }
 
 .tips .container {
@@ -420,4 +424,5 @@ img {
   font-size: 14px;
   line-height: 150%;
   color: #898989;
+
 }/*# sourceMappingURL=main.css.map */
