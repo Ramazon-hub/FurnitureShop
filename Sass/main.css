@@ -58,7 +58,11 @@ img {
   display: flex;
   align-items: center;
 }
+
+
+
 .site-headr .logo {
+
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
@@ -105,6 +109,197 @@ img {
   background-image: url(../images/icons/chevron-down.svg);
 }
 
+.footer {
+  margin-top: 57px;
+}
+.footer .container {
+  border-top: 1px solid #d8d8d8;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left, .footer__right {
+  max-width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__right {
+  margin-left: 80px;
+}
+.footer__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+}
+.footer__ul {
+  width: 100%;
+  list-style: none;
+}
+.footer__list {
+  margin-top: 16px;
+}
+.footer__link {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+  transition: all 0.5s;
+  position: relative;
+}
+.footer__link::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background-color: #E89F71;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.footer__link:hover {
+  color: #E89F71;
+}
+.footer__link:hover::after {
+  -webkit-animation: border 0.3s linear;
+          animation: border 0.3s linear;
+  width: 100%;
+}
+.footer__link-gps {
+  display: flex;
+  align-items: center;
+}
+.footer__link-gps::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  background-image: url(../images/icons/pin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
+.footer__link-phone {
+  display: flex;
+  align-items: center;
+}
+.footer__link-phone::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icons/phone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
+.footer__form {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer__form-input {
+  width: 242px;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #828282;
+  background: #f4f5f7;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+}
+.footer__form-input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #828282;
+}
+.footer__form-input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #828282;
+}
+.footer__form-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #828282;
+}
+.footer__form-btn {
+  width: 45px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: url(../images/icons/send.png), #E89F71;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.address {
+  font-style: normal;
+  width: 249px;
+}
+
+.email {
+  width: 292px;
+}
+
+@-webkit-keyframes border {
+  0% {
+    background-color: red;
+    width: 0%;
+  }
+  25% {
+    background-color: gold;
+    width: 25%;
+  }
+  50% {
+    background-color: green;
+    width: 50%;
+  }
+  75% {
+    background-color: fuchsia;
+    width: 75%;
+  }
+  100% {
+    background-color: #E89F71;
+    width: 100%;
+  }
+}
+
+@keyframes border {
+  0% {
+    background-color: red;
+    width: 0%;
+  }
+  25% {
+    background-color: gold;
+    width: 25%;
+  }
+  50% {
+    background-color: green;
+    width: 50%;
+  }
+  75% {
+    background-color: fuchsia;
+    width: 75%;
+  }
+  100% {
+    background-color: #E89F71;
+    width: 100%;
+  }
+}
 .form__input {
   width: 47.3rem;
   padding: 1.2rem 1.5rem;
@@ -117,4 +312,117 @@ img {
 }
 .form__input::placeholder {
   font-size: 14px;
+
+}
+
+.tips .container {
+  overflow: hidden;
+}
+.tips__title {
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  color: #3A3A3A;
+  margin-bottom: 32px;
+}
+.tips__slider {
+  position: relative;
+  z-index: 5;
+}
+.tips__slider-two-btn {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: -140px;
+  z-index: 5;
+}
+.tips__slider-btn-next, .tips__slider-btn-prev {
+  width: 48px;
+  height: 48px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: url(../images/icons/chevron-right-orange.png), #fff;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.tips__slider-btn-prev {
+  transform: rotate(180deg);
+  box-shadow: 0px -4px 14px 1px rgba(0, 0, 0, 0.16);
+  left: 0;
+}
+.tips__slider-btns {
+  margin-top: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tips__slider-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tips__slider-btn::before {
+  content: "";
+  display: inline-block;
+  background-color: #D8D8D8;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.tips__slider-btn-active {
+  border: 1px solid #E89F71;
+}
+.tips__slider-btn-active::before {
+  background-color: #E89F71;
+}
+.tips__slider-box {
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -4px 4px 10px rgba(97, 97, 97, 0.1), 4px 4px 10px rgba(97, 97, 97, 0.1);
+}
+.tips__slider-box-imgs {
+  transition: transform 0.5s;
+  display: flex;
+}
+.tips__slider-list {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 30px;
+}
+.tips__slider-list-img {
+  width: 100%;
+  height: 250px;
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tips__slider-list-text {
+  padding: 16px;
+}
+.tips__slider-list-content {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3A3A3A;
+  margin-bottom: 8px;
+}
+.tips__slider-list-data {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #898989;
+
 }/*# sourceMappingURL=main.css.map */
