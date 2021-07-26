@@ -1,0 +1,183 @@
+.footer {
+  margin-top: 57px;
+
+  .container {
+    border-top: 1px solid #d8d8d8;
+    padding: 80px 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left,
+  &__right {
+    max-width: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    margin-left: 80px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-black;
+  }
+
+  &__ul {
+    width: 100%;
+    list-style: none;
+  }
+
+  &__list {
+    margin-top: 16px;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616161;
+    transition: all .5s;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      background-color: $color-primary;
+
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      &::after {
+        animation: border .3s linear;
+        width: 100%;
+      }
+    }
+
+
+    &-gps {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 18px;
+        background-image: url(../images/icons/pin.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-right: 10px;
+      }
+    }
+
+    &-phone {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/icons/phone.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &-input {
+      width: 242px;
+      display: inline-block;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #828282;
+      background: #f4f5f7;
+      border: none;
+      outline: none;
+      padding: 10px 12px;
+
+      &::placeholder {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #828282;
+      }
+    }
+
+    &-btn {
+      width: 45px;
+      height: 45px;
+      border: none;
+      outline: none;
+      background: url(../images/icons/send.png), $color-primary;
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      background-position: center;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+  width: 249px;
+}
+
+.email {
+  width: 292px;
+}
+
+@keyframes border {
+  0% {
+    background-color: red;
+    width: 0%;
+  }
+
+  25% {
+    background-color: gold;
+    width: 25%;
+  }
+
+  50% {
+    background-color: green;
+    width: 50%;
+  }
+
+  75% {
+    background-color: fuchsia;
+    width: 75%;
+  }
+
+  100% {
+    background-color: $color-primary;
+    width: 100%;
+  }
+}
