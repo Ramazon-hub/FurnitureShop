@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="site-headr">
+  <header class="site-headr">
         <div class="container">
             <a href="index.html" class="logo">Funiro.</a>
 
@@ -36,13 +36,10 @@
                 <button class="site-profile__btn btn"></button>
                 <button class="site-profile__btn btn"></button>
             </div>
-        </div>
-    </header>
-
-
-    <main>
-
-
+          </div>
+        </header>
+        
+      </main>
         <section class="tips">
             <div class="container">
                 <h1 class="tips__title">Tips & Tricks</h1>
@@ -105,15 +102,35 @@
             </div>
         </section>
 
-    </main>
+    
+
+    <!---------------------
+            SECTION 2 "OUR PRODUCTS"  
+    ---------------------->
+        <section>  
+            <div class="container">
+                <h2 class="second-section__heading">Our Products</h2>
+                <ul class="products-list">
+                  
+
+                    <!-- <div class="card-product__modal">
+                        <button class="modal-top__btn" >Add to cart</button>
+                        <div class="modal-bottom">
+                          <button class="modal-bottom__btn-left">Share</button>
+                          <button class="modal-bottom__btn-right">Like</button>
+                        </div>
+                      </div> -->
+                 
+                </ul>
+            </div>
+        </section>
 
     <!-- Kamoliddin -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__left">
-                <address class="address">
-                    <a href="index.html" class="logo">Funiro.</a>
-
+      <div class="container">
+        <div class="footer__left">
+          <address class="address">
+            <a href="index.html" class="logo">Funiro.</a>
                     <ul class="footer__ul">
                         <li class="footer__list">
                             <a href="#" class="footer__link">
@@ -195,17 +212,38 @@
 
     </footer>
 
-
     
 
 
+    <!---------------------
+            TEMPLATES
+     ----------------------->
+ <template class="product-card-temp">
+     <li class="card-product">
+        <img class="product-image" src="./images/products/syltherine.png" width="285" height="301" alt="syltherine">
+        <h3 class="product-name">Syltherine</h3>
+        <p class="product-info">Stylish cafe chair</p>
+        <p class="real-price">2500</p>
+        <p class="old-price">1000</p>
+
+     <!-- modal oyna uchun -->
 
 
+        <div class="card-product__modal">
+                        <button class="modal-top__btn" >Add to cart</button>
+                        <div class="modal-bottom">
+                          <button class="modal-bottom__btn-left">Share</button>
+                          <button class="modal-bottom__btn-right">Like</button>
+                        </div>
+                      </div>
+     </li> 
+ </template>
+ 
 
-
-
-
-
+  <!-----------------------
+            SCRIPTS JS
+    ------------------------>
+    <script src="./scripts/products.js"></script>
     <script src="scripts/main.js"></script>
     <script src="./scripts/tips.js"></script>
 </body>
