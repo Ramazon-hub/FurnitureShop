@@ -1,29 +1,33 @@
-.site-headr{
+.site-headr {
     background-color: $bg-FC;
     background-image: url(../images/hero/hero-bg-yellow.png);
     background-size: contain;
-    .container{
+
+    .container {
         display: flex;
         align-items: center;
     }
-    .logo{
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
-        color:inherit
-    }
 }
-.site-profile{
-    &__btn{
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: inherit
+}
+
+.site-profile {
+    &__btn {
         border: none;
         outline: none;
-        background:transparent;
-        &:first-child{
+        background: transparent;
+
+        &:first-child {
             width: 2.1rem;
             height: 2rem;
             background-image: url(../images/icons/heart-dark.png);
-            background-size:cover;
+            background-size: cover;
         }
     }
 }
