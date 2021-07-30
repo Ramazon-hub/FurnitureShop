@@ -23,7 +23,4 @@ function createProductFn (products) {
 
 createProductFn(products)
 
-
-
-
 cardFromTemp.addEventListener('click', OpenModalFn)
