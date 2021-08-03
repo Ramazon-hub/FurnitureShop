@@ -12,13 +12,14 @@
 
 
 //  companents
-
+@import './components/btn';
 //  layout
 @import './layout/headr';
 @import './layout/nav';
+@import './layout/intro';
+@import './layout/tips';
 @import './layout/footer';
 @import './layout/forms';
-@import './layout/tips';
 
 
 //  page

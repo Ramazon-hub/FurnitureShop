@@ -1,7 +1,12 @@
 .site-headr {
-    background-color: $bg-FC;
-    background-image: url(../images/hero/hero-bg-yellow.png);
-    background-size: contain;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    lef: 0;
+    z-index: 10;
+    padding: 10px 0;
+    background-image: linear-gradient(to right,$bg-F9 70%,$bg-FC 30% );
+
 
     .container {
         display: flex;
@@ -18,16 +23,33 @@
 }
 
 .site-profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
     &__btn {
         border: none;
         outline: none;
         background: transparent;
+        width: 24px;
+        height: 24px;        
+        margin-left: 32px;
+        background-size: contain;
+        cursor: pointer;
+        
+        &--bookmark {
+            background-image: url(../images/icons/heart-dark.svg);
+         
+        }
+        &--cart{
+            background-image: url(../images/icons/cart.svg);
 
-        &:first-child {
-            width: 2.1rem;
-            height: 2rem;
-            background-image: url(../images/icons/heart-dark.png);
-            background-size: cover;
+        }
+        &--account
+        {
+            width: 40px;
+            height: 40px;
+            background-image: url(../images/icons/profile.svg);
+            
         }
     }
 }

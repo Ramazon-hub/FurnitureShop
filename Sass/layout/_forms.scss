@@ -1,9 +1,17 @@
 .form{
     &__input{
         width: 47.3rem;
-        padding: 1.2rem 1.5rem;
+        padding: 1.2rem 4.5rem;
+        border:none;
+        outline: none;
+        background-image: url(../images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: left 12px center;
         &::placeholder{
             font-size: 14px;
+            line-height: 21px;
+            font-family: 'Gilroy';
+            color:#616161;
         }
     }
 }
